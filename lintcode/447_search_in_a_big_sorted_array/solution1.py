@@ -29,5 +29,7 @@ class Solution:
 
         if reader.get(start) == target:
             return start
+        elif reader.get(end) == target:
+            return end
         else:
             return -1
