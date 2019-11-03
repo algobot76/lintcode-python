@@ -6,4 +6,4 @@ class Solution:
     """
 
     def sortColors2(self, colors, k):
-        pass
+        colors.sort()
