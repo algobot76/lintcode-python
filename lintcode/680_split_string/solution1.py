@@ -5,4 +5,17 @@ class Solution:
     """
 
     def splitString(self, s):
-        pass
+        ans = []
+        self.dfs(s, [], ans)
+        return ans
+
+    def dfs(self, s, path, ans):
+        if s == "":
+            ans.append(path[:])
+            return
+
+        for i in range(2):
+            if i + 1 <= len(s):
+                path.append(s[:i + 1])
+                self.dfs(s[i + 1:], path, ans)
+                path.pop()
