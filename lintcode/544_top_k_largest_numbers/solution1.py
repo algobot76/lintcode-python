@@ -6,4 +6,4 @@ class Solution:
     """
 
     def topk(self, nums, k):
-        pass
+        return sorted(nums, reverse=True)[:k]
