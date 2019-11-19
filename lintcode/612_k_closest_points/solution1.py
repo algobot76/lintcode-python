@@ -31,6 +31,7 @@ class Solution:
         while len(heap) > 0:
             _, x, y = heapq.heappop(heap)
             ans.append(Point(-x, -y))
+        ans.reverse()
 
         return ans
 
